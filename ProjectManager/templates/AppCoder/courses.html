@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+{{ titlle }}
+
+{% endblock %}
+
+{% block content %}
+
+    {% for course in courses %}
+    <div>
+        <h2>{{course.name}}</h2>
+        <p>Generation: {{course.generation}}</p>
+    </div>
+    {% endfor %}
+
+{% endblock %}
